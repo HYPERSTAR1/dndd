@@ -1,0 +1,6 @@
+{
+  "name": "AI Dungeon Master",
+  "description": "A collaborative full-stack D&D tabletop RPG led by an AI Dungeon Master that balances and resolves player actions simultaneously.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
