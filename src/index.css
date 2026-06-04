@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-serif: "Cinzel", Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-bg-base: #0c0c0e;
+  --color-panel-card: #16161a;
+  --color-panel-border: #2d2d35;
+  --color-arcane-primary: #7e61ff;
+  --color-arcane-secondary: #ff61d8;
+  --color-text-dimmed: #a1a1aa;
+}
+
+/* Custom scrollbar matching dark dungeons */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0c0e;
+}
+::-webkit-scrollbar-thumb {
+  background: #2d2d35;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7e61ff;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
